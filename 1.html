@@ -99,7 +99,18 @@
         <section style="text-align: left;">
           <h1>Features of ES6</h1>
           <p>ES6 brings with it extra features for basic things like for loops. See the example below and figure out what is does:</p>
-
+          <pre><code class="hljs">
+  // Old JS
+  var arr = ["A", "B", "C"];
+  for (var i in arr) {
+    console.log(arr[i])
+  }
+  // ES6
+  let arr = ["A", "B", "C"];
+  for (let a of arr) {
+    console.log(a)
+  }
+          </code></pre>
         </section>
       </div>
     </div>
