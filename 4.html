@@ -48,13 +48,38 @@
           <p>By <a href="https://github.com/ericm">Eric Moynihan</a></p>
         </section>
         <section style="text-align: left;">
-          
+          <h1>React</h1>
+          <p>React is a UI JavaScript framework. It runs on the client and allows us to make reusable UI components with individual or shared state.</p>
+          <p>React uses a superset of JavaScript called JSX to handle it's components</p>
+        </section>
+        <section style="text-align: left;">
+          <h1>JSX</h1>
+          <p>JSX is just ES6 Javascript but also supports XML (HTML is based on XML)</p>
+          <p>This allows React to use HTML elements as objects and you can construct a React component using JSX</p>
+        </section>
+        <section style="text-align: left;">
+          <h2>Example</h2>
+           <pre><code class="hljs">
+class ShoppingList extends React.Component {
+  render() {
+    return (
+      <div className="shopping-list">
+        <h1>Shopping List for {this.props.name}</h1>
+        <ul>
+          <li>Instagram</li>
+          <li>WhatsApp</li>
+          <li>Oculus</li>
+        </ul>
+      </div>
+    );
+  }
+}
+           </code></pre>
         </section>
       </div>
     </div>
 
     <script src="reveal/js/reveal.js"></script>
-
     <script>
       // More info https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
