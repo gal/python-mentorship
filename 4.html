@@ -60,6 +60,9 @@
         <section style="text-align: left;">
           <h2>Example</h2>
            <pre><code class="hljs">
+import * as React from "react";
+import { render } from "react-dom"
+           
 class ShoppingList extends React.Component {
   render() {
     return (
@@ -74,6 +77,14 @@ class ShoppingList extends React.Component {
     );
   }
 }
+
+let baseDiv = document.querySelector("#root");
+
+// Note the this.props.name. We can pass that prop during construction as below:
+// Props in react are just attributes on their 
+
+// Below is the render function from react-dom. It injects a react component into a component in the regular dom.
+render(<ShoppingList name="Whatever" />, baseDiv)
            </code></pre>
         </section>
       </div>
