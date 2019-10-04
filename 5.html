@@ -84,7 +84,7 @@
         <section>
           <h1>Code Example</h1>
           <p>Here's a modified version of our code from last week:</p>
-          <pre><code class="hljs">
+          <pre><code class="hljs" data-trim data-noescap>
 import * as React from "react";
 import { render } from "react-dom"
             
@@ -92,13 +92,16 @@ class ShoppingList extends React.Component {
   handler(e) {
     // Note it has access to the item clicked
     console.log(e.currentTarget);
+    e.currentTarget.innerText = "Changed";
+    // Here it modifies the element clicked.
+    // But it can be used to change state.
     
   }
   render() {
     return (
       <div className="shopping-list">
         <h1>Shopping List for {this.props.name}</h1>
-        <button onClick={this.handler}></button>
+        <button onClick={this.handler}>Text</button>
         <ul>
           <li>Instagram</li>
           <li>WhatsApp</li>
@@ -112,6 +115,9 @@ class ShoppingList extends React.Component {
 let baseDiv = document.querySelector("#root");
 render(<ShoppingList name="Whatever"></ShoppingList>, baseDiv)
             </code></pre>
+        </section>
+        <section style="text-align: left;">
+          <h1>See the code example on github for a full implementation</h1>
         </section>
       </div>
     </div>
