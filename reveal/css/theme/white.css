@@ -55,7 +55,9 @@ body {
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 2.5em; }
+  font-size: 2.5em;
+  color: #c95a3e;
+}
 
 .reveal h2 {
   font-size: 1.6em; }
