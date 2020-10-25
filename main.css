@@ -1,0 +1,38 @@
+@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 3em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 1em;
+}
+
+a {
+    color: #2a76dd;
+    text-decoration: none;
+    -webkit-transition: color .15s ease;
+    -moz-transition: color .15s ease;
+    transition: color .15s ease;
+}
+
+a:hover {
+    color: #2468c9;
+}
